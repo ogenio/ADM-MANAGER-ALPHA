@@ -49,7 +49,7 @@ echo -e "$barra"
 
 function_versaoatt () {
 apt-get install curl -y > /dev/null 2>&1
-v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/versaoatt")
+v1=$(curl -sSL "https://raw.githubusercontent.com/ogenio/ADM-MANAGER-ALPHA/main/Install/versaoatt")
 echo "$v1" > /etc/adm-lite/versao_script
 }
 
@@ -69,7 +69,7 @@ echo -e "Use Command:"
 echo -e "\033[1;36mdpkg --configure -a"
 echo -e "\033[1;31mVerify your Source.list"
 echo -e "For Update Source list use this comand"
-echo -e "\033[1;36mwget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/apt-source.sh && chmod 777 ./* && ./apt-*"
+echo -e "\033[1;36mwget https://raw.githubusercontent.com/ogenio/ADM-MANAGER-ALPHA/main/Install/apt-source.sh && chmod 777 ./* && ./apt-*"
 echo -e "$barra"
 echo -ne "\033[0m"
 exit 1
@@ -93,7 +93,7 @@ chmod +x ./*
 instalar_fun
 function_verify
 [[ -e $HOME/lista ]] && rm $HOME/lista
-wget -O $HOME/versao https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/master/versao  &> /dev/null
+wget -O $HOME/versao https://raw.githubusercontent.com/ogenio/ADM-MANAGER-ALPHA/master/versao  &> /dev/null
 echo -e "$barra"
 echo -e "${cor[5]} $(source trans -b pt:${id} "Perfeito Procedimento Feito com Sucesso!")"
 echo -e "$barra"
@@ -116,7 +116,7 @@ cd $HOME
 locale-gen en_US.UTF-8 > /dev/null 2>&1
 update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
 apt-get install gawk -y > /dev/null 2>&1
-wget -O trans https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/trans -o /dev/null 2>&1
+wget -O trans https://raw.githubusercontent.com/ogenio/ADM-MANAGER-ALPHA/main/Install/trans -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
 clear
 echo -e "$barra"
@@ -146,5 +146,5 @@ echo -e "$barra"
 echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instalação...")"
 echo -e "$barra"
 echo -ne "${cor[4]}"
-wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/lista -o /dev/null
+wget -O lista https://raw.githubusercontent.com/ogenio/ADM-MANAGER-ALPHA/main/Install/lista -o /dev/null
 valid_fun
