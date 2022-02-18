@@ -18,7 +18,7 @@
 
 ## :book: Installation
 
-apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh; chmod 777 instala.sh* && ./instala.sh*
+apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/ogenio/ADM-MANAGER-ALPHA/main/instala.sh; chmod 777 instala.sh* && ./instala.sh*
 
 ```
 ADM-MANAGER (las dependencias faltantes se instalarán automáticamente)
@@ -29,7 +29,7 @@ ADM-MANAGER (las dependencias faltantes se instalarán automáticamente)
 
 **VERSION: 818034**
 
-https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/master/versao
+https://raw.githubusercontent.com/ogenio/ADM-MANAGER-ALPHA/master/versao
 
 ## :octocat: Credits
 
